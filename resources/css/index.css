@@ -1,0 +1,76 @@
+
+body {
+   font-size: 18px;
+   font-family: 'Courier New', Courier, monospace;
+   text-align: center;
+   /* background-color: rgb(174, 223, 252); */
+   background-image: linear-gradient( 115deg, rgba(75, 75, 180, 0.8), rgba(72, 72, 185, 0.7) ), url("../../assets/dark-UK-flag.jpg");
+   background-repeat: no-repeat;
+   background-size: cover;
+   background-position: center;
+}
+
+header {
+    color:  rgb(255, 255, 255);
+    font-size: large;
+    margin: 70px auto 50px auto;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+header p {
+    font-style: italic;
+    margin-bottom: 30px;
+}
+
+form {
+    color: white;
+    background-color: rgb(9, 9, 70);
+    width: 60%;
+    margin: 0 auto;
+}
+
+form > div.form-box {
+    width: 80%;
+    padding-top: 20px;
+    margin: 0 auto;
+    text-align: start;
+}
+
+#last-form-box {
+    text-align: center;
+}
+
+input {
+    margin-top: 5px;
+}
+
+#name, #email, #number, #dropdown {
+    width: 100%;
+    height: auto;
+}
+
+#comments {
+    width: 100%;
+    height: 80px;
+}
+
+#submit {
+    color: white;
+    background-color: rgb(175, 68, 35);
+    margin: 20px auto 100px auto;
+    width: 80%;
+    height: 40px;
+    text-align: center;
+}
+
+
+
+
+@media (max-width: 850px) {
+    form {
+        width: 85%;
+    }
+}
+
+

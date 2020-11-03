@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>English Lessons Survey</title>
+    <link href="./resources/css/index.css" type="text/css" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <h1 id="title">Your English Lesson Survey</h1>
+        <p id="description">Please fill out the form below to help me prepare a 100% customized English lesson</p>
+    </header>
+    <form id="survey-form">
+      <!-- Name info -->
+        <div class="form-box"> 
+          <label id="name-label" for="name">Name</label><br>
+          <input id="name" name="name" type="text" placeholder="enter your name" required>
+        </div>
+      <!-- Email info -->
+        <div class="form-box">
+          <label id="email-label" for="email">Email</label><br>
+          <input id="email" name="email" type="email" placeholder="enter your Email" required>
+        </div>
+      <!-- Age info -->
+        <div class="form-box">
+          <label id="number-label" for="number">Age (optional)</label><br>
+          <input id="number" name="age" type="number" min=10 max=99 placeholder="Age">
+        </div>
+      <!-- Status info -->
+        <div class="form-box">
+          <p>Which best describes your current status?</p>
+          <select id="dropdown" name="status" required>
+            <option disabled selected value>Select which applies to you</option>
+            <option value="student">Student</option>
+            <option value="job">Full Time Worker</option>
+            <option value="learner">Full Time Learner</option>
+            <option value="notSay">Prefer not to say</option>
+            <option value="other">Other</option>
+          </select>
+        </div>
+      <!-- English level info -->
+        <div class="form-box">
+            <p>How would you describe your current English level?</p>
+          <label><input type="radio" name="english-level" value="beginner" checked>Beginner (A1-A2)</label><br>
+          <label><input type="radio" name="english-level" value="intermediate">Intermediate (B1)</label><br>
+          <label><input type="radio" name="english-level" value="upper-intermediate">Upper-intermediate (B2)</label><br>
+          <label><input type="radio" name="english-level" value="advanced">Advanced (C1-C2)</label><br>
+        </div>
+      <!-- Focus Areas info -->
+        <div class="form-box">
+            <p>Which areas would you like to prioritize? Check all that apply</p>
+          <label><input type="checkbox" name="focus-areas" value="grammar">Grammar</label><br>
+          <label><input type="checkbox" name="focus-areas" value="speaking">Speaking</label><br>
+          <label><input type="checkbox" name="focus-areas" value="writing">Writing</label><br>
+          <label><input type="checkbox" name="focus-areas" value="listening">Listening</label><br>
+          <label><input type="checkbox" name="focus-areas" value="reading">Reading</label><br>
+          <label><input type="checkbox" name="focus-areas" value="translation">Translating</label><br>
+          <label><input type="checkbox" name="focus-areas" value="business-english">Business English</label>
+        </div>
+      <!-- Learning method preferences -->
+        <div class="form-box">
+          <p>Which learning methods would you like to pursue? Check all that apply</p>
+        <label><input type="checkbox" name="learning-method" value="grammar-book">Grammar book</label><br>
+        <label><input type="checkbox" name="learning-method" value="themed-book">Book based on topical issues</label><br>
+        <label><input type="checkbox" name="learning-method" value="newspaper"></label>Newspaper articles (e.g. NY Times)<br>
+        <label><input type="checkbox" name="learning-method" value="interviews">Youtube celebrities' interviews</label><br>
+        <label><input type="checkbox" name="learning-method" value="tutorials">Youtube tutorials</label><br>
+        <label><input type="checkbox" name="learning-method" value="tv-series">Original language TV series</label>
+      </div>
+      <!-- Additional comments -->
+        <div class="form-box">
+            <p>Additional requests?</p>
+            <textarea id="comments" name="comment" placeholder="Enter your comments here..."></textarea>
+        </div>
+      <!-- Submit button -->
+        <div class="form-box" id="last-form-box">
+          <button id="submit" type="submit">Submit</button>
+        </div>
+
+    </form>
+   
+   <script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
+</body>
+</html>
